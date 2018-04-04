@@ -38,7 +38,7 @@ for individualCharacter in input {
     if individualCharacter == "😃" || individualCharacter == "😊" || individualCharacter == "😀" || individualCharacter == "😄" || individualCharacter == "🙂"  {
         //Add a happy
         hapiFes += 1
-    } else if individualCharacter == "☹️" || individualCharacter == "😔" || individualCharacter == "😟" || individualCharacter == "🙁" || individualCharacter == "☹️" || individualCharacter == "😢" {
+    } else if individualCharacter == "☹️" || individualCharacter == "😔" || individualCharacter == "😟" || individualCharacter == "🙁" || individualCharacter == "☹️" || individualCharacter == "😢" || individualCharacter == "😕"{
         //Add a sadboye
         sadFes += 1
     }
