@@ -20,7 +20,7 @@ guard let input = rawInput else {
 }
 //Stop the program if there was invalid input
 if input.characters.count < 1 || input.characters.count > 255 {
-    exit(9)
+    print("Please enter a string with at least 1 and no more than 255 characters.")
 }
 
 // Print out the input provided
