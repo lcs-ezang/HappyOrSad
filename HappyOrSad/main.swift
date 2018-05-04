@@ -9,23 +9,35 @@
 import Foundation
 
 // Get the user input
-var rawInput = readLine()
 var hapiFes = 0
 var sadFes = 0
+var input = ("")
 
-//Make sure the input was given (create a String from the String?)
-guard let input = rawInput else {
-    //ERROR
-    exit(9)
-}
-//Stop the program if there was invalid input
-if input.characters.count < 1 || input.characters.count > 255 {
-    print("Please enter a string with at least 1 and no more than 255 characters.")
-}
+//Continue until valid input is found
 
+while 2 == 2 {
+
+    // Collect input via readLine()
+    // and
+    // Test #1: Make sure the input was given (create a String from the String?)
+    guard let givenInput = readLine() else {
+        //ERROR
+        continue
+    }
+
+    //Stop the program if there was invalid input
+    if givenInput.count < 1 || givenInput.count > 255 {
+        print("Please enter a string with at least 1 and no more than 255 characters.")
+        continue
+    }
+
+    //Input is acceptable
+    input = givenInput
+    break
+
+}
 // Print out the input provided
 print("You said:")
-print(rawInput) //optinal String
 print(input) //non optional String
 
 //Process - inspect each character
